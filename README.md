@@ -1,5 +1,6 @@
 # Hwang DoHyeun - Data Engineer
-# 
+- 효과적인 데이터 파이프라인 설계와 최적화에 열정을 가진 신입 데이터 엔지니어 입니다.
+- 지속적인 자기 개발과 혁신을 추구합니다.
 # Skill
 <a href="https://github.com/ROOTXBOT2" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFFFFF"/></a>
 <a href="https://github.com/ROOTXBOT2" target="_blank"><img src="https://img.shields.io/badge/Apache_kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=FFFFFF"/></a>
