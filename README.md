@@ -1,4 +1,3 @@
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ROOTXBOT2&theme=bear&show_icons=true)
 # Hwang DoHyeun - Data Engineer
 # 
 # Skill
@@ -11,3 +10,4 @@
 <a href="https://github.com/ROOTXBOT2" target="_blank"><img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=FFFFFF"/></a>
 
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ROOTXBOT2&theme=bear&show_icons=true)
