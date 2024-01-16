@@ -1,5 +1,5 @@
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&theme=bear&show_icons=true)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ROOTXBOT2&theme=bear&show_icons=true)
 
 # Skill
 <a href="https://github.com/ROOTXBOT2" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFFFFF"/></a>
