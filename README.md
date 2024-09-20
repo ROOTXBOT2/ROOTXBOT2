@@ -1,6 +1,7 @@
 # Hwang DoHyeun - Data Engineer
 - 효과적인 데이터 파이프라인 설계와 최적화에 열정을 가진 신입 데이터 엔지니어 입니다.
 - 지속적인 자기 개발과 혁신을 추구합니다.
+- <a href="https://velog.io/@rootxbot2/posts">Velog</a>
 # Project
 - <a href="https://github.com/ROOTXBOT2/BitCoinData">(Oen) 비트코인 데이터 분석</a>
 - <a href="https://github.com/ROOTXBOT2">(Team) AWS EMR 구축 및 세그먼트 데이터 핸들링(보안)</a>
