@@ -2,9 +2,9 @@
 - 효과적인 데이터 파이프라인 설계와 최적화에 열정을 가진 신입 데이터 엔지니어 입니다.
 - 지속적인 자기 개발과 혁신을 추구합니다.
 # Project
-- <a href="https://github.com/ROOTXBOT2">(Oen) 실시간 데이터 처리 위한 Spark & Flink & Kafka</a>
-- <a href="https://github.com/ROOTXBOT2">(Team) AWS EMR 구축 및 세그먼트 데이터 핸들링</a>
-- <a href="https://github.com/ROOTXBOT2">(One) Jpick 프로젝트</a>
+- <a href="https://github.com/ROOTXBOT2/BitCoinData">(Oen) 비트코인 데이터 분석</a>
+- <a href="https://github.com/ROOTXBOT2">(Team) AWS EMR 구축 및 세그먼트 데이터 핸들링(보안)</a>
+- <a href="https://github.com/ROOTXBOT2/Employment-Assistant-Project">(One) Jpick 프로젝트</a>
 - <a href="https://github.com/ROOTXBOT2/Voice_reproduction_service_v1">(Team) 음성 재생성 서비스 프로젝트</a>
 # Skill
 <a href="https://github.com/ROOTXBOT2" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFFFFF"/></a>
