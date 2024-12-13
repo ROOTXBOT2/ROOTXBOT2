@@ -4,9 +4,6 @@
 - <a href="https://velog.io/@rootxbot2/posts">Velog</a>
 # Project
 - <a href="https://github.com/ROOTXBOT2/BitCoinData">(Oen) 비트코인 데이터 분석</a>
-- <a href="https://github.com/ROOTXBOT2">(Team) AWS EMR 구축 및 세그먼트 데이터 핸들링(보안)</a>
-- <a href="https://github.com/ROOTXBOT2/Employment-Assistant-Project">(One) Jpick 프로젝트</a>
-- <a href="https://github.com/ROOTXBOT2/Voice_reproduction_service_v1">(Team) 음성 재생성 서비스 프로젝트</a>
 # Skill
 <a href="https://github.com/ROOTXBOT2" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFFFFF"/></a>
 <a href="https://github.com/ROOTXBOT2" target="_blank"><img src="https://img.shields.io/badge/Apache_kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=FFFFFF"/></a>
