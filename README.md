@@ -14,7 +14,7 @@ Spring Boot 기반 백엔드 개발자입니다.
 - 데이터 처리: JPA, JDBC Template, PostgreSQL/PostGIS, MySQL, Redis
 - 안정성: Redis Stream, RateLimit, token blacklist, 상태 전이 검증
 - 테스트: 단위 테스트, 통합 테스트, Testcontainers
-- 협업: GitHub Issues, Pull Requests, 기능 브랜치, 코드 리뷰 대응
+- 협업: API First, GitHub Issues, Pull Requests, 기능 브랜치, 코드 리뷰 대응
 - 운영 관점: CI, 구조화 로깅, Actuator, Prometheus, k6 성능 측정
 
 ---
@@ -30,6 +30,9 @@ Spring Boot 기반 백엔드 개발자입니다.
 
 Key Contributions
 
+- MVP 출시 일정을 기준으로 구현 난이도와 소요 시간을 산정해 PM과 스펙을 조율하고, 핵심 기능 중심으로 범위를 정리
+- API 명세를 먼저 확정하는 API First 방식을 제안해 프론트엔드와 병렬 개발이 가능하도록 협업 구조 구성
+- 기획자·디자이너와는 ERD 중심 설명보다 UI 흐름에 맞춘 데이터 설명 방식으로 소통해 화면별 상태와 API 요구사항 정리
 - Spring Security 기반 Stateless 보안 구조와 JWE Access/Refresh Token 구현
 - Redis token blacklist, OWNER / CONSUMER / ADMIN 역할 기반 접근 제어, Redis RateLimit 적용
 - 노쇼 게시글 등록·예약 게시·소비자 주문 생성 흐름 구현
@@ -152,13 +155,14 @@ Links
 
 ### Collaboration
 
-`GitHub Issues` `Pull Requests` `Branch Strategy` `Code Review` `Swagger / OpenAPI`
+`API First` `GitHub Issues` `Pull Requests` `Branch Strategy` `Code Review` `Swagger / OpenAPI`
 
 ---
 
 ## How I Work
 
 - 요구사항을 기능 단위로 분해하고 GitHub Issue로 관리합니다.
+- API 명세를 먼저 정리해 프론트엔드와 병렬 개발 가능한 협업 구조를 만듭니다.
 - 기능 브랜치와 PR 단위로 구현 범위를 명확히 남깁니다.
 - 단순 구현보다 예외 처리, 상태 전이, 권한 검증, 테스트 가능성을 함께 고려합니다.
 - 구현 후 README, 포트폴리오 문서, 코드 흐름 문서를 정리해 근거를 남깁니다.
