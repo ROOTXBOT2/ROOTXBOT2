@@ -10,12 +10,12 @@ Spring Boot 기반 백엔드 개발자입니다.
 ## Focus
 
 - Spring Boot 기반 REST API 설계 및 구현
-- 인증/인가: Spring Security, JWT, Role 기반 접근 제어
+- 인증/인가: Spring Security, JWE/JWT, Role 기반 접근 제어
 - 데이터 처리: JPA, JDBC Template, PostgreSQL/PostGIS, MySQL, Redis
-- 안정성: Idempotency-Key, RateLimit, Refresh Token, 상태 전이 검증
+- 안정성: Redis Stream, RateLimit, token blacklist, 상태 전이 검증
 - 테스트: 단위 테스트, 통합 테스트, Testcontainers
 - 협업: GitHub Issues, Pull Requests, 기능 브랜치, 코드 리뷰 대응
-- 운영 관점: CI, 구조화 로깅, Actuator, Prometheus, Grafana
+- 운영 관점: CI, 구조화 로깅, Actuator, Prometheus, k6 성능 측정
 
 ---
 
@@ -23,15 +23,31 @@ Spring Boot 기반 백엔드 개발자입니다.
 
 ### Dandi-Onna
 
-> 최근 진행한 팀 프로젝트입니다. 상세 포트폴리오 문서는 정리 예정입니다.
+> 노쇼 재고 손실을 판매 기회로 전환하는 O2O 예약·주문 플랫폼
 
-- Backend API development
-- Reservation / No-show domain
-- Spring Boot 기반 서비스 고도화
-- 운영 안정성, 성능 측정, 문서화 개선 예정
+음식점 노쇼로 발생한 재고 손실을 줄이기 위해, 사장님이 노쇼 메뉴를 등록하면 소비자가 할인된 가격으로 바로 주문할 수 있도록 만든 서비스입니다.  
+백엔드 단독 개발자로 인증/인가, 매장/메뉴, 노쇼 게시글, 예약 게시, 소비자 주문, 알림, 매출 조회·엑셀 export, 운영/성능 측정 체계를 담당했습니다.
 
-Repository  
-https://github.com/goorm-ynot/dandi-onna-be
+Key Contributions
+
+- Spring Security 기반 Stateless 보안 구조와 JWE Access/Refresh Token 구현
+- Redis token blacklist, OWNER / CONSUMER / ADMIN 역할 기반 접근 제어, Redis RateLimit 적용
+- 노쇼 게시글 등록·예약 게시·소비자 주문 생성 흐름 구현
+- PESSIMISTIC_WRITE 기반 게시글 잠금 조회, 방문 시간/금액/할인율/원가 재검증, 잔여 수량 차감과 sold_out 상태 전이 적용
+- Redis Stream 기반 FCM 알림 worker와 알림 이력 저장, DLQ 이동 / 수동 replay 구조 구현
+- Redis Stream 기반 매출 엑셀 export worker, Apache POI 엑셀 생성, S3-compatible storage 업로드, presigned download URL 제공
+- 단품/세트 메뉴 구성, effectiveStatus 계산, Redis upload token과 ETag 검증 기반 메뉴 이미지 임시 업로드/확정 흐름 구현
+- Prometheus business metric, MDC 기반 JSON 로깅, k6 + Docker 성능 측정 스크립트와 seed SQL 정리
+
+Tech Stack
+
+`Java 21` `Spring Boot` `Spring Security` `JWE/JWT` `PostgreSQL/PostGIS` `Redis` `Redis Stream` `Firebase FCM` `MinIO/S3-compatible Storage` `Apache POI` `Micrometer` `Prometheus` `k6` `Docker`
+
+Links
+
+- Portfolio: https://github.com/goorm-ynot/dandi-onna-be/blob/docs/dandi-onna-portfolio/PORTFOLIO.md
+- Repository Notes: https://github.com/goorm-ynot/dandi-onna-be/blob/docs/dandi-onna-portfolio/docs/repo-notes.md
+- Repository: https://github.com/goorm-ynot/dandi-onna-be
 
 ---
 
@@ -120,11 +136,11 @@ Links
 
 ### Backend
 
-`Java` `Spring Boot` `Spring Security` `Spring Data JPA` `JWT` `Gradle`
+`Java` `Spring Boot` `Spring Security` `Spring Data JPA` `JWE/JWT` `Gradle`
 
-### Database / Cache
+### Database / Cache / Messaging
 
-`MySQL` `PostgreSQL` `PostGIS` `Redis` `H2`
+`MySQL` `PostgreSQL` `PostGIS` `Redis` `Redis Stream` `H2`
 
 ### Testing
 
@@ -132,7 +148,7 @@ Links
 
 ### DevOps / Observability
 
-`GitHub Actions` `Docker Compose` `Actuator` `Micrometer` `Prometheus` `Grafana` `Logstash`
+`GitHub Actions` `Docker Compose` `Actuator` `Micrometer` `Prometheus` `Grafana` `Logstash` `k6`
 
 ### Collaboration
 
